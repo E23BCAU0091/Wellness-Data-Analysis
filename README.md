@@ -1,18 +1,30 @@
-# Wellness-Data-Analysis
-Data Science project analyzing the relationship between hydration, sleep, and daily productivity using Python and Machine Learning.
-# Wellness Data Analysis
+# Health & Wellness Data Science Project
 
-This project analyzes wellness data using Python, focusing on health trends, correlations, and insights.  
-It includes data cleaning, visualization, and statistical analysis.
+This project combines a frontend health dashboard and a Python-based data analysis system  
+to explore how wellness habits like hydration, sleep, and BMI affect daily productivity
 
-# Features
-- Data preprocessing  
-- Exploratory data analysis (EDA)  
-- Correlation & regression insights  
-- Visualization dashboards  
+Part 1 — Health Assistant Dashboard
+Tech: HTML, CSS, JavaScript  
+- Tracks daily water intake, BMI, and schedules.
+- Demonstrates frontend development and logic implementation.
+- Exports or simulates data for later analysis.
 
-# File
-- "wellness_analysis.ipynb": Main analysis notebook.
+File:"index.html"
+Part 2 — Wellness Data Analysis & Prediction
+Tech: Python, Pandas, Matplotlib, Seaborn, Scikit-learn  
+- Performs data cleaning, visualization, and correlation analysis.
+- Builds a **Linear Regression model to predict productivity based on water intake and sleep hours.
+- Visualizes results with scatter plots and heatmaps.
+  
+File: "wellness_analysis.ipynb"
 
-# Author
-- Harshita Jain
+ Key Insights
+- Positive correlation between hydration/sleep and tasks completed.
+- Linear Regression model achieved R² ≈ 0.85.
+- Demonstrates complete workflow: Data Collection → EDA → ML Prediction.
+
+Tools & Libraries
+"Python"| "Pandas" | "Matplotlib" | "Seaborn" | "Scikit-learn"| "HTML" | "CSS" | "JavaScript"
+
+
+## 📁 Folder Structure
