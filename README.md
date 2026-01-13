@@ -29,4 +29,6 @@ How to Run
 2. Run `wellness_analysis.ipynb` in Jupyter Notebook
 
  Screenshots
-(Add images here)
+<img width="1480" height="705" alt="Screenshot 2026-01-13 224448" src="https://github.com/user-attachments/assets/d7afbe29-933c-417d-ba90-6ec615f10936" />
+
+<img width="845" height="574" alt="Screenshot 2026-01-13 224500" src="https://github.com/user-attachments/assets/607dd0a8-f3ab-40c8-919f-4de70dd5db50" />
