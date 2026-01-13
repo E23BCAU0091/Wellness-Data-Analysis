@@ -1,3 +1,6 @@
+from IPython.display import HTML
+
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +30,14 @@
             margin-bottom: 20px;
             border-radius: 8px;
         }
-        button {
+        button { /* From _GqecWHDR3KZ */
             background-color: #f0ad4e;
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
         }
-        input, select {
+        input, select { /* From SKmNAIaSSHCx */
             padding: 8px;
             margin-top: 5px;
             margin-bottom: 15px;
@@ -44,7 +47,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header> <!-- From SKmNAIaSSHCx -->
         <h1>Health Assistant Dashboard</h1>
     </header>
     <div class="container">
@@ -54,7 +57,6 @@
             <button onclick="trackWater()">Add</button>
             <p id="waterResult"></p>
         </div>
-
         <div class="section">
             <h2>Schedule Maker</h2>
             <input type="text" id="task" placeholder="Enter task">
@@ -71,14 +73,12 @@
             <p id="bmiResult"></p>
         </div>
     </div>
-
     <footer>
         &copy; 2025 Health Assistant. All rights reserved.
     </footer>
 
     <script>
         let totalWater = 0;
-
         function trackWater() {
             const water = parseInt(document.getElementById('waterInput').value);
             if (!isNaN(water)) {
@@ -87,19 +87,22 @@
             }
         }
 
-        const schedule = {};
-
         function addSchedule() {
-            const task = document.getElementById('task').value;
-            const time = document.getElementById('taskTime').value;
+            const taskInput = document.getElementById('task');
+            const timeInput = document.getElementById('taskTime');
+            const task = taskInput.value;
+            const time = timeInput.value;
 
-            if (schedule[time]) {
-                alert(`Conflict! You already have "${schedule[time]}" scheduled at ${time}`);
-            } else {
-                schedule[time] = task;
+            if (task && time) {
                 const li = document.createElement('li');
                 li.textContent = `${time} - ${task}`;
                 document.getElementById('scheduleList').appendChild(li);
+
+                // Clear input fields after adding
+                taskInput.value = '';
+                timeInput.value = '';
+            } else {
+                alert('Please enter both a task and a time.');
             }
         }
 
@@ -128,3 +131,6 @@
     </script>
 </body>
 </html>
+"""
+
+HTML(html_content)
